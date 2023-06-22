@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.App {
+  font-family: sans-serif;
+  background-color: RoyalBlue;
+  height: 100%;
+  min-height: 100vh;
+  color: white;
+}
+
+.App .container {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 8px;
+}
+
+.App .container .sorter {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.App .container .sorter .current {
+  margin-top: 8px;
+  padding: 8px;
+  font-size: 128px;
+  justify-content: center;
+  background: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+}
+
+.App .container .sorter .btn {
+  margin-top: 8px;
+  padding: 8px;
+  justify-content: center;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background: #00b8d4;
+  transition: background-color 0.3s;
+}
+
+.App .container .sorter .btn:hover {
+  background-color: #0091a8;
+  cursor: pointer;
+}
